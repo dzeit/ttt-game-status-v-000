@@ -55,15 +55,15 @@ def over?(board)
 end
 
 def winner(board)
-  if !won?(board) 
-    return nil 
+  if !won?(board)
+    return nil
   else
     WIN_COMBINATIONS.each do |win_combo|
-    if  ""
+    if
       return "X"
-    else 
+    else
       return "O"
-    end 
+    end
   end
-end 
+end
 end
