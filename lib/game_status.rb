@@ -54,9 +54,9 @@ def over?(board)
   end
 end
 
-def winner(board)
-  if won?(board)
-    index = won?(board)[0]
-    board[index]
+def winner(board) # we need to return the character "x" or character "o"
+  if won?(board) # won?(board) returns a win_combo
+    index = won?(board)[0] # but a win_combo is not enough. We need to return a character (an element of the win_combo array)
+    board[index] # this is calling the character
   end
 end
