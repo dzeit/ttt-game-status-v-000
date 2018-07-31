@@ -33,7 +33,7 @@ end
 def full?(board)
   if board.include?(' ') || board.include?('')
     return false
-else
+  else
     return true
   end
 end
